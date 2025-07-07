@@ -17,20 +17,20 @@
 
 <!-- Navbar -->
 <nav class="sticky top-0 w-full bg-white shadow z-10">
-  <div class="container lg:max-w-[1200px] md:max-w-[900px] sm:max-w-[1200px] mx-auto px-4 py-3 flex justify-between items-center">
+  <div class="container lg:max-w-[1200px] md:max-w-[900px] sm:max-w-[1200px] mx-auto px-4 py-3 md:py-6 flex justify-between items-center">
 
     <!-- Logo -->
     <a href="index.html">
-      <img src="logo1.PNG" alt="logo" class="lg:w-[130px] sm:w-[50px] md:w-[100px]">
+      <img src="logo1.PNG" alt="logo" class="lg:w-[130px] sm:w-[50px] md:w-[350px]">
     </a>
 
     <!-- Menu Icon (Mobile only) -->
-    <button id="menuBtn" class=" text-white bg-orange-600 px-2 py-1 rounded text-xl">
+    <button id="menuBtn" class=" text-orange-500 font-bold md:text-7xl lg:hidden">
       <i class="bi bi-list"></i>
     </button>
 
     <!-- Desktop Nav -->
-    <ul class="hidden space-x-10 font-medium text-slate-700">
+    <ul class="sm:hidden md:hidden lg:block space-x-10 font-medium text-slate-700">
       <li><a href="#home" class="text-lg border-b-4 border-b-orange-600 hover:border-b-blue-600 duration-300">Home</a></li>
       <li><a href="#about" class="text-lg hover:text-orange-600 hover:border-b-4 hover:border-indigo-600 duration-300">About</a></li>
       <li><a href="#project" class="text-lg hover:text-orange-600 hover:border-b-4 hover:border-indigo-600 duration-300">Projects</a></li>
@@ -49,30 +49,30 @@
 
   <!-- Hero Section -->
 
-  <section id="home" class="bg-slate-50 pt-6 pb-16">
+  <section id="home" class="bg-slate-50   pt-6 pb-16 md:pt-24">
 
     <div class="container mx-auto w-full max-w-[1200px] px-4 flex flex-col lg:flex-row justify-between gap-10">
   
       <!-- Left Part -->
       <div class="w-full lg:w-[80%]">
-        <div class=" lg:bg-orange-400 rounded-3xl shadow-xl flex flex-col md:flex-row justify-between  items-center md:items-start  md:text-left">
+        <div class=" lg:bg-orange-400 lg:rounded-3xl lg:shadow-xl flex sm:flex-col md:flex-col  md:mb-20 justify-between  items-center ">
   
              <!-- Image phone-->
              <div class="p-4 lg:hidden  ">
-              <img src="mypc.jpg" alt="Smreeti" class="w-[220px] h-[280px] sm:w-[260px] sm:h-[310px] p-2 border border-orange-600 rounded-full shadow-2xl" />
+              <img src="mypc.jpg" alt="Smreeti" class=" sm:w-[260px] sm:h-[310px] md:w-[430px] md:h-[520px] p-2 border-4 border-orange-600 rounded-full shadow-2xl" />
             </div>
 
           <!-- Text -->
-          <div class=" mt-24 text-center md:ms-6">
-            <h1 class="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[44px] font-bold lg:text-white md:text-gray-600  sm:text-gray-600  mb-4 ">
+          <div class=" mt-24 md:mt-16 text-center">
+            <h1 class="text-[28px] sm:text-[32px] md:text-[70px] lg:text-[44px] font-bold lg:text-white md:text-gray-600  sm:text-gray-600  mb-4 ">
               Hi, <span class="lg:text-blue-600 md:text-orange-600  sm:text-orange-600">I’m</span> Smreeti Pokharel
             </h1>
-            <p class="font-semibold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] text-white lg:text-white sm:text-gray-600 md:text-gray-600 ">
+            <p class="font-semibold text-[16px] sm:text-[18px] md:text-[30px] lg:text-[20px] text-white lg:text-white sm:text-gray-600 md:text-gray-600 ">
               Frontend Developer | React | Tailwind CSS
             </p>
             <a href="#project">
               <button
-                class="mt-8 px-4 py-1  text-sm md:text-base bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-orange-600 hover:scale-105 duration-300 border border-transparent hover:border-blue-700">
+                class="mt-8 lg:px-4 lg:py-1 md:px-8 md:py-3 md:text-xl  lg:text-sm  md:text-white md:bg-orange-600 lg:bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-orange-600 hover:scale-105 duration-300 border border-transparent hover:border-blue-700">
                 See My Work
               </button>
             </a>
@@ -87,21 +87,21 @@
       </div>
   
       <!-- Right Part (Contact Box) -->
-      <div class="w-full lg:w-[25%]">
-        <div class="bg-white p-6 md:py-10 text-center shadow-md border rounded-xl">
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-700 mb-4">Get In Touch</h2>
-          <p class="text-slate-600 text-sm sm:text-base mb-6">This is my digital corner — feel free to reach out or connect with me.</p>
+      <div class="w-full lg:w-[25%]  md:mx-auto">
+        <div class="bg-white  p-6 md:py-20 text-center lg:shadow-md lg:border rounded-xl">
+          <h2 class="text-xl sm:text-2xl md:text-7xl font-bold text-slate-700 mb-4">Get In Touch</h2>
+          <p class="text-slate-600 text-sm sm:text-base mb-6 md:text-3xl">This is my digital corner — feel free to reach out or connect with me.</p>
   
           <div class="flex justify-center gap-5 flex-wrap">
             <a href="https://www.linkedin.com/in/smreeti-pokhrel-38a464247/">
-              <i class="bi bi-linkedin text-blue-700 text-2xl hover:scale-110 duration-300"></i>
+              <i class="bi bi-linkedin text-blue-700 text-2xl md:text-5xl hover:scale-110 duration-300"></i>
             </a>
             <a href="https://github.com/isupkh">
-              <i class="bi bi-github text-gray-600 text-2xl hover:scale-110 duration-300"></i>
+              <i class="bi bi-github text-gray-600 text-2xl md:text-5xl hover:scale-110 duration-300"></i>
             </a>
-            <i class="bi bi-envelope-fill text-green-600 text-2xl hover:scale-110 duration-300"></i>
-            <i class="bi bi-facebook text-blue-600 text-2xl hover:scale-110 duration-300"></i>
-            <i class="bi bi-instagram text-pink-600 text-2xl hover:scale-110 duration-300"></i>
+            <i class="bi bi-envelope-fill text-green-600 text-2xl md:text-5xl hover:scale-110 duration-300"></i>
+            <i class="bi bi-facebook text-blue-600 text-2xl md:text-5xl hover:scale-110 duration-300"></i>
+            <i class="bi bi-instagram text-pink-600 text-2xl md:text-5xl hover:scale-110 duration-300"></i>
           </div>
         </div>
       </div>
@@ -110,23 +110,23 @@
 
   <!-- About Me-->
 
-<section id="about" class="pt-6 relative overflow-hidden h-[400px] ">
+<section id="about" class="pt-9 relative overflow-hidden h-[400px] md:h-[800px] ">
 
   <!-- Background Image -->
-  <div class=" absolute inset-0 bg-fixed bg-center bg-cover brightness-50 h-[900px]" 
+  <div class=" absolute inset-0 bg-fixed bg-center bg-cover brightness-50 h-[900px] md:h-[1000px]" 
   style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/0*8aWxGDQ2-DUIFmP5');">
 </div>
 
                               <!-- Content -->
                              <div class="relative  h-full  text-center  ">
-                                <div class="container mx-auto w-[1200px]  items-center space-x-10 ">
+                                <div class="container mx-auto lg:w-[1200px] md:w-[1000px]   items-center ">
 
-                                  <div class="text-white">
-                                    <h2 class="text-3xl font-bold text-center mt-14 mb-5 sm:hidden lg:block ">About Me</h2>
-                                    <div class="flex lg:flex-row sm:flex-col items-center  gap-6 sm:px-14">
-                                      <img src="myimg2.jpg" alt="Smreeti Pokhrel" class=" lg:w-64 lg:h-52 sm:w-24 sm:h-24 sm:mb-2 rounded-full border-2 border-white shadow-lg" />
-                                        <h2 class="text-2xl font-bold text-center sm:leading-3 sm:block lg:hidden ">About Me</h2>
-                                      <p class="lg:text-[18px] leading-relaxed sm:leading-relaxed  mx-auto sm:text-sm">
+                                <div class="text-white">
+                                  <h2 class="text-3xl font-bold text-center mt-14 mb-5 sm:hidden lg:block ">About Me</h2>
+                                    <div class="flex lg:flex-row sm:flex-col items-center  gap-6">
+                                      <img src="myimg2.jpg" alt="Smreeti Pokhrel" class="lg:w-64 lg:h-52 sm:w-24 sm:h-24 sm:mb-12 md:w-56 md:h-56 rounded-full border-2 border-white shadow-lg" />
+                                        <h2 class="text-7xl font-bold text-center  sm:block lg:hidden ">About Me</h2>
+                                      <p class="lg:text-[18px] leading-relaxed md:text-2xl sm:leading-relaxed  mx-auto sm:text-sm">
                                         I’m a passionate and dedicated front-end developer with hands-on experience in
                                         building user-friendly websites. My skillset includes HTML, CSS,
                                         JavaScript, Tailwind and Bootstrap. I also have a foundational understanding of
@@ -144,89 +144,89 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="project" class="lg:pb-14 lg:pt-20 bg-slate-50  px-4">
-    <div class="container mx-auto w-[1200px]">
-      <h2 class="lg:text-3xl sm:text-2xl font-bold text-slate-900 mb-10 text-center">Projects</h2>
+  <section id="project" class="lg:pb-14 lg:pt-20 bg-slate-50 md:py-24  px-4">
+    <div class="container mx-auto w-[1200px] md:w-[1000px]">
+      <h2 class="lg:text-3xl sm:text-2xl md:text-7xl font-bold text-slate-900 md:mb-20 mb-10 text-center">Projects</h2>
 
       <div class="flex flex-wrap  sm:items-center justify-center gap-12">
 
         <!-- Project 1 -->
-        <div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[430px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-          <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Nabil Bank Website</h3>
+        <div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[430px] md:w-[1200px] md:h-[730px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+          <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Nabil Bank Website</h3>
           <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5 "
             src="NabilT.PNG"
             alt="">
-          <p class="text-slate-800 pb-6 text-sm">
+          <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
             A clean and modern corporate website built for Nabil Bank. It includes sections like About, Services, and Contact with a professional layout. Designed using React and styled entirely with Tailwind CSS.
           </p>
-          <a href="https://nabil-bank.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+          <a href="https://nabil-bank.vercel.app/" class="text-white text-sm   font-semibold  rounded-lg px-3 py-1 md:text-3xl md:pt-4 md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
       </div>
 
       <!-- Project 2 -->
     
-      <div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[500px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-        <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Etsy Website</h3>
-        <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5 "
+      <div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] md:mt-4 sm:h-[430px] md:w-[1200px] md:h-[830px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+        <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Etsy Website</h3>
+        <img class="lg:w-[250px] lg:h-[180px]  pb-6  lg:ml-5 "
           src="etsyT.PNG"
           alt="">
-        <p class="text-slate-800 pb-6 text-sm">
+        <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
           An e-commerce site inspired by Etsy's global marketplace. Features product listings, category filtering, and a neat UI for shopping experiences. Built with React components and Tailwind for styling.
         </p>
-        <a href="https://etsy-react-alpha.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+        <a href="https://etsy-react-alpha.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 md:text-3xl md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
     </div>
 
 
 
 <!-- Project 3 -->
-<div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[460px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-  <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Meroshopping Website</h3>
+<div class="bg-white lg:w-[340px] lg:h-[430px] md:mt-4 sm:w-[500px] sm:h-[430px] md:w-[1200px] md:h-[760px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+  <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Meroshopping Website</h3>
   <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5  "
     src="meroT.PNG"
     alt="">
-  <p class="text-slate-800 pb-6 text-sm">
+  <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
     A local online shopping platform with featured products, categories, and intuitive layout. Focused on product display and user interaction. Developed using React and Tailwind CSS.
   </p>
-  <a href="https://mero-shopping-ten.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+  <a href="https://mero-shopping-ten.vercel.app/" class="text-white text-sm  font-semibold rounded-lg px-3 py-1 md:text-3xl md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
 </div>
 
 
         <!-- Project 4 -->
-        <div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[450px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-          <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Sayumi Travels Website</h3>
+        <div class="bg-white lg:w-[340px] md:mt-4 lg:h-[430px] sm:w-[500px] sm:h-[430px] md:w-[1200px] md:h-[780px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+          <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Sayumi Travels Website</h3>
           <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5 "
             src="sayumiT.PNG"
             alt="">
-          <p class="text-slate-800 pb-6 text-sm">
+          <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
             A visually appealing travel website for tour promotion and information display. Features tour listings, overview sections, and user-friendly design. Built with React and Tailwind CSS for simplicity and clarity.
           </p>
-          <a href="https://sayumi-travels.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+          <a href="https://sayumi-travels.vercel.app/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 md:text-3xl md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
       </div>
 
 
 <!-- Project 5 -->
-<div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[500px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-  <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Safal News Website</h3>
+<div class="bg-white lg:w-[340px] lg:h-[430px] md:mt-4 sm:w-[500px] sm:h-[430px] md:w-[1200px] md:h-[820px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+  <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Safal News Website</h3>
   <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5  "
     src="safalT.PNG"
     alt="">
-  <p class="text-slate-800 pb-6 text-sm">
+  <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
     A structured news website that displays articles, categories, and recent updates. Focused on content layout and readability. Created with Tailwind for design.
   </p>
-  <a href="https://isupkh.github.io/SafalNews-Tailwind/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+  <a href="https://isupkh.github.io/SafalNews-Tailwind/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 md:text-3xl md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
 </div>
 
 
 
 <!-- Project 6 -->
-<div class="bg-white lg:w-[340px] lg:h-[430px] sm:w-[500px] sm:h-[470px] text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
-  <h3 class="text-[20px] font-semibold text-slate-800 mb-6">Seven Star Website</h3>
+<div class="bg-white lg:w-[340px] lg:h-[430px] md:mt-4 sm:w-[500px] sm:h-[430px] md:w-[1200px] md:h-[770px] md:shadow-xl   text-center  p-6 mb-6 rounded-xl border border-slate-200 shadow hover:shadow-lg transition hover:scale-105 duration-300">
+  <h3 class="text-[20px] md:text-5xl font-semibold text-slate-800 mb-6 md:pb-6">Seven Star Website</h3>
   <img class="lg:w-[250px] lg:h-[180px]  pb-6 lg:ml-5 "
     src="sevenT.PNG"
     alt="">
-  <p class="text-slate-800 pb-6 text-sm">
+  <p class="text-slate-800 pb-6 text-sm md:text-2xl md:pb-14">
     A structured news website that displays articles, categories, and recent updates. Focused on content layout and readability. Created with Tailwind for design.
   </p>
-  <a href="https://isupkh.github.io/Seven-Star/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
+  <a href="https://isupkh.github.io/Seven-Star/" class="text-white text-sm font-semibold rounded-lg px-3 py-1 md:text-3xl md:px-12 md:py-4 bg-orange-600 shadow-md hover:scale-105 duration-300">GitHub</a>   
 </div>
 
     </div>
@@ -235,49 +235,49 @@
 
 
   <!-- My hobbies -->
-  <section id="hobbies" class="py-16 bg-slate-50 px-4">
-    <div class="container mx-auto w-[1200px] text-center">
-      <h2 class="lg:text-3xl sm:text-2xl font-bold text-slate-700 mb-10">My Hobbies</h2>
+  <section id="hobbies" class="py-16 md:py-12 bg-slate-50 px-4">
+    <div class="container mx-auto lg:w-[1200px]  text-center">
+      <h2 class="lg:text-3xl sm:text-2xl md:text-7xl md:pb-6 font-bold text-slate-700 mb-10">My Hobbies</h2>
 
-      <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 lg:text-left sm:pt-4">
+      <div class="grid lg:grid-cols-3 md:w-[800px]  sm:grid-cols-1 gap-6 lg:text-left sm:pt-4">
         <!-- Hobby: Coding -->
-        <div class="bg-white sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Coding</h3>
-          <p class="text-slate-600 ">I love building websites and exploring new technologies to improve my development
+        <div class="bg-white  sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Coding</h3>
+          <p class="text-slate-600 md:text-xl">I love building websites and exploring new technologies to improve my development
             skills.</p>
         </div>
 
         <!-- Hobby: Learning New Things -->
         <div class="bg-white  sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Learning New Things</h3>
-          <p class="text-slate-600">I enjoy continuously learning—whether it’s tech, design, or life skills. It keeps me
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Learning New Things</h3>
+          <p class="text-slate-600 md:text-xl">I enjoy continuously learning—whether it’s tech, design, or life skills. It keeps me
             curious and motivated.</p>
         </div>
 
         <!-- Hobby: Sketching / Drawing -->
         <div class="bg-white  sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Sketching / Drawing</h3>
-          <p class="text-slate-600">Art allows me to express myself creatively. I often sketch ideas or just draw for
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Sketching / Drawing</h3>
+          <p class="text-slate-600 md:text-xl">Art allows me to express myself creatively. I often sketch ideas or just draw for
             fun and relaxation.</p>
         </div>
 
         <!-- Hobby: Playing Cricket & Games -->
         <div class="bg-white  sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Playing Cricket & Games</h3>
-          <p class="text-slate-600">Sports keep me active and refreshed. I love cricket and enjoy playing other games
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Playing Cricket & Games</h3>
+          <p class="text-slate-600 md:text-xl">Sports keep me active and refreshed. I love cricket and enjoy playing other games
             with friends too.</p>
         </div>
 
         <!-- Hobby: Astronomy & Space -->
         <div class="bg-white sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Astronomy & Space</h3>
-          <p class="text-slate-600">The universe fascinates me! I enjoy reading and learning about stars, planets, and
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Astronomy & Space</h3>
+          <p class="text-slate-600 md:text-xl">The universe fascinates me! I enjoy reading and learning about stars, planets, and
             cosmic mysteries.</p>
         </div>
 
         <!-- Hobby: Connecting with People -->
         <div class="bg-white sm:p-5 lg:p-6 rounded-lg sm:shadow-lg lg:shadow-md lg:hover:shadow-xl lg:transition sm:mb-6 sm:border-2 ">
-          <h3 class="text-xl font-semibold text-slate-700 mb-2">Connecting with People</h3>
+          <h3 class="text-xl font-semibold text-slate-700 mb-2 md:pb-4 md:text-4xl">Connecting with People</h3>
           <p class="text-slate-600">I value deep conversations and meaningful relationships. I enjoy meeting people and
             building strong bonds.</p>
         </div>
@@ -288,27 +288,27 @@
 
   <!-- Skills Section -->
   <section id="skills" class="py-20 bg-white text-center px-4">
-    <div class="container mx-auto w-[1200px] ">
-      <h2 class="text-3xl font-bold text-slate-900 mb-16">Skills</h2>
+    <div class="container mx-auto lg:w-[1200px] md:w-[1000px] ">
+      <h2 class="text-3xl font-bold text-slate-900 mb-16 md:text-7xl md:pb-16">Skills</h2>
 
-      <div class="flex sm:flex-wrap  justify-between gap-24 lg:flex-wrap items-center">
-        <img class="w-32 h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+      <div class="flex md:flex-wrap  justify-between gap-24 lg:flex-wrap md:items-center items-center">
+        <img class="lg:w-32 lg:h-32 md:w-72 md:h-72 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="">
-        <img class="w-28 h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 md:w-56 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://miro.medium.com/v2/resize:fit:342/1*50R1_jrwum8K-54tZFeefQ.png" alt="">
 
-        <img class="w-32 h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 md:w-64 md:h-64 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx6bItCDw_xt1e6Z2XUHC0OwUmdhfkLEBHKg&s" alt="">
-        <img class="w-64 h-36 hover:shadow-lg hover:scale-105 duration-300 hover:border "
+        <img class="lg:w-32 lg:h-32 md:w-62 md:h-74 hover:shadow-lg hover:scale-105 duration-300 hover:border "
           src="https://www.simplihire.com/wp-content/uploads/2023/09/ux-ui-logo.png" alt="">
-        <img class="w-72 h-12 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/1280px-Tailwind_CSS_logo.svg.png"
           alt="">
-        <img class="w-52 h-20 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ_hbMNHn7fx2cJbeuaYMGFWN0jvIrAsPqg&s" alt="">
-        <img class="w-56 h-24 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://miro.medium.com/v2/resize:fit:1400/1*BQZAbczBfLYtPp-6HmN0ZQ.jpeg" alt="">
-        <img class="w-40 h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
+        <img class="lg:w-32 lg:h-32 hover:shadow-lg hover:scale-105 duration-300 hover:border"
           src="https://cdn.prod.website-files.com/5f10ed4c0ebf7221fb5661a5/5f2f630735aafe2300802edd_git-logo.png"
           alt="">
 
